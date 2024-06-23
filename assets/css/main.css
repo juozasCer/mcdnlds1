@@ -3120,7 +3120,7 @@ image {
 .main__separator {
   height: 100px;
   width: 100vw;
-  background-image: url("../img/separator.png");
+  background-image: url("../img/Separator.png");
   background-size: contain;
   background-position: center;
   background-repeat: repeat-x;
