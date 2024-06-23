@@ -108,7 +108,29 @@
 
               <div class="bts mt-8"><a href="https://pump.fun/board" class="buy-now__box" target="_blank">
                 <img src="buy-now-icon.png" alt="Buy Now" class="buy-now__icon"> </a></div>
-
+								<title>Text Box with Placeholder</title>
+								<style>
+										/* Basic styling for the text box */
+										.textbox {
+												padding: 10px;
+												border: 1px solid #000000;
+												border-radius: 4px;
+												font-size: 36px;
+												width: 350px;
+										}
+						
+										/* Styling for the placeholder text */
+										.textbox::placeholder {
+												color: #000000;
+										}
+								</style>
+						</head>
+						<body>
+								<form>
+										<label for="inputField">Enter value:</label>
+										<input type="text" id="inputField" class="textbox" placeholder="ca:">
+								</form>
+						</body>
 
             </div>
           </div>
