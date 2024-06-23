@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Example background color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to next line if necessary */
+}
+
+.photo-frame {
+    width: calc(33.33% - 20px); /* 33.33% width minus margin */
+    margin: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.photo-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+

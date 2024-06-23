@@ -11,7 +11,68 @@
 */
 
 /* 1. Template Dark */
+/* .main .section .community{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+} */
+.buy-now-container {
+    position: relative;
+    text-align: center;
+}
 
+
+.buy-now__icon {
+    width: 300px; /* Adjust icon width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.buy-now__text {
+    color: #007bff; /* Text color */
+    font-size: 20px; /* Text font size */
+}
+.section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	gap: 40px;
+}
+
+.list__item {
+    margin: 10px 0;
+
+}
+
+.item__link {
+    text-decoration: none;
+    color: #ec1010;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+.item__link svg {
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+}
 input:focus,
 textarea:focus,
 button:focus {
@@ -35,11 +96,20 @@ textarea:focus::-moz-placeholder {
 
 input:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder {
-	color: #f0f0f0 !important;
+	color: #f0f0f000 !important;
 }
 
-body, .container .line {
-	background: #26262d !important;
+.section.started{
+	background-image: url('/assets/images/bg.png'); /* Replace with your image file path */
+	  background-size: cover; /* Cover the entire section */
+	  background-position: center; /* Center the background image */
+	  background-repeat: no-repeat; /* Do not repeat the background image */
+	height: 2000px;
+	display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  text-align: center;
+  }
 }
 
 table th, 
@@ -95,7 +165,7 @@ a.btn,
 .skills ul li .name,
 .box-items .box-item .desc .name,
 .popup-box .desc h4 {
-	color: #f0f0f0;
+	color: #c22525;
 }
 
 .container, 
@@ -114,12 +184,12 @@ header.opened,
 .skills.circles .progress:after,
 footer,
 header {
-	background: #31313a !important;
+	background: transparent !important;
 }
 
 .background-enabled .started-content .glitch-effect:before, 
 .background-enabled .started-content .glitch-effect:after {
-    background: transparent !important;
+    background-image: url('assets/images/works/bg.png');
 }
 
 .glitch-effect:before, .glitch-effect:after, .glitch-effect-white:before, .glitch-effect-white:after {
@@ -127,8 +197,8 @@ header {
 }
 
 .mfp-close-btn-in .mfp-close {
-	background: #31313a !important;
-	color: #fff !important;
+	background: transparent !important;
+	color: #ec0909 !important;
 }
 
 .section .content .title .title_inner, 
@@ -172,7 +242,7 @@ ins,
 header .head-top .menu-btn span,
 header .head-top .menu-btn:before,
 header .head-top .menu-btn:after {
-	background: #f0f0f0 !important;
+	background: #723535 !important;
 }
 
 .search-form input.search-submit {
@@ -192,7 +262,7 @@ button {
 }
 
 .navigation.post-navigation .nav-links a:hover {
-	color: #dddddd !important;
+	color: #834646 !important;
 }
 
 .sticky, 
@@ -227,7 +297,7 @@ header .head-top .top-menu-nav .children li a {
 
 header .head-top .top-menu-nav .sub-menu li:hover a, 
 header .head-top .top-menu-nav .children li:hover a {
-	color: #f0f0f0 !important;
+	color: #794747 !important;
 }
 
 .post-comments ul.children ul.children {
@@ -247,7 +317,7 @@ header .head-top .top-menu-nav .children li:hover a {
 }
 
 .background-enabled header .head-top .top-menu-nav .sub-menu li a {
-	color: #a2a2a6 !important;
+	color: #2c2c88 !important;
 }
 
 .background-enabled header .head-top .top-menu-nav .sub-menu li a:hover {

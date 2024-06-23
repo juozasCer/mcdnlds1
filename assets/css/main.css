@@ -7,6 +7,24 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+#dark-mode {
+  /* Keep the existing background color */
+  background: #757fff url('/images/bg.png') no-repeat center center fixed;
+  /* Ensure the background covers the entire viewport */
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+  height: 100%;
+}
+#video-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 *,
 ::before,
 ::after {
@@ -408,9 +426,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 */
 
 img,
-video {
+image {
   max-width: 100%;
   height: auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
@@ -3072,7 +3092,7 @@ video {
 }
 
 :root {
-  --extra-color: #f26b38;
+  --extra-color: #9c6006;
   --text-shadow-color:#ede574;
 }
 
@@ -3097,3 +3117,123 @@ video {
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
+.main__separator {
+  height: 100px;
+  width: 100vw;
+  background-image: url("../img/separator.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  border: none;
+  animation: 30s marque infinite linear;
+}
+
+@keyframes marque {
+  from {
+    background-position: 0vw 0;
+  }
+  to {
+    background-position: 100vw 0;
+  }
+  .wrapper .header .header__nav .header__social .social__link{
+    font-size: 1.5rem;
+  }
+
+  .section__title,
+  .contract .content__title {
+    text-shadow: 4px 4px 0 #fff, 0px -2px 0 #fff, 0px 1px 0 #fff, 1px 1px 0 #fff
+  }
+
+  .description .section__content .content__text {
+    font-size: 1.25rem;
+  }
+
+  .section__title, .contract .content__title {
+    letter-spacing: 10px;
+  }
+
+
+  .wrapper {
+    font-size: 50px;
+  }
+  .wrapper .header .header__nav .header__social .social__link {
+    padding: 15px 50px;
+  }
+}
+@media screen and (max-width: 1235px) {
+  .roadmap .section__content .section__list .list__item {
+    font-size: xx-large;
+    width: 100%;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #47a1f2;
+    border-radius: 2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    font-size: 50px;
+  }
+  .wrapper .header .header__nav .header__logo {
+    margin: 0 auto;
+  }
+  .wrapper .header .header__nav .header__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .wrapper .header .header__nav .header__social .social__link {
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 486px) {
+  .wrapper {
+    font-size: 40px;
+  }
+  .wrapper .header .header__nav .header__logo {
+    margin: 0 auto;
+  }
+  .wrapper .header .header__nav .header__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .wrapper .header .header__nav .header__social .social__link {
+    width: 150px;
+    margin: 0 auto;
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .wrapper {
+    font-size: 30px;
+  }
+  .wrapper .header {
+    background-image: url(../img/header-bg-mobile.png);
+    padding-top: 120px;
+  }
+  .wrapper .header .header__nav .header__logo {
+    margin: 0 auto;
+  }
+  .wrapper .header .header__nav .header__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .wrapper .header .header__nav .header__social .social__link {
+    width: 150px;
+    margin: 0 auto;
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 1166px) {
+  .wrapper .main__section .pampanomics .section__content .content__list {
+    width: 701px;
+  }
+}
+@media screen and (max-width: 1080px) {
